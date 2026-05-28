@@ -330,7 +330,9 @@ p {
   display: flex;
   width: max-content;
   gap: 34px;
-  animation: rhythm-scroll 24s linear infinite;
+  padding-right: 34px;
+  animation: rhythm-scroll 44s linear infinite;
+  will-change: transform;
 }
 
 .rhythm-line span {
@@ -963,7 +965,7 @@ p {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 17px));
   }
 }
 
